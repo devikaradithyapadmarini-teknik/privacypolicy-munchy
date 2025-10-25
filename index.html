@@ -1,0 +1,310 @@
+
+
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth body">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Terms of Service - NutriAI Heritage</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="images/imut.png">
+  <title>Privacy Policy - NutriAI</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="icon" type="image/png" href="images/imut.png">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#8D4040',
+            accent: '#D04A33',
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+        /* Using a custom font utility class since Gill Sans isn't standard in Tailwind */
+        body {
+            font-family: "Sour Gummy", sans-serif; /* Fallback to serif for browsers that don't support custom fonts */
+            background-color: #FFFBF5; /* A light cream background for the whole page */
+            font-size: 18px; /* Base font size */
+        }
+        /* Custom colors to match your design */
+        .text-brand-brown { color: #8C3F3F; }
+        .bg-brand-brown { background-color: #8C3F3F; }
+        .border-brand-yellow { border-color: #D6AE5F; }
+        .bg-brand-orange { background-color: #F2994A; } /* A slightly brighter orange for the header */
+
+
+        /* ====== BASE (desktop default) ====== */
+        .page {
+            display: grid;
+            grid-template-columns: repeat(12, minmax(0,1fr));
+            gap: 24px;
+            /* layout desktop (>=1024px) */
+            grid-template-areas:
+            "our-game our-game our-game our-game our-game our-game our-game our-game our-game our-game our-game our-game"
+            "data-collected data-collected data-collected data-collected data-collected data-collected eligibility eligibility eligibility eligibility eligibility eligibility"
+            "health  health  health  health  health  health  ip         ip         ip         ip         privacy   privacy"
+            "liability liability liability modification modification modification prohibited prohibited contact contact contact contact";
+        }
+
+        /* mapping id -> area name */
+        #our-game      { grid-area: our-game; }
+        #data-collected { grid-area: data-collected; }
+        #data-usage  { grid-area: data-usage; }
+        #data-security  { grid-area: data-security; }
+        #third-party  { grid-area: third-party; }
+        #user-rights      { grid-area: user-rights; }
+        #policy-updates    { grid-area: policy-updates; }
+        
+
+        /* ====== TABLET (≥600px dan <1024px) ====== */
+        @media (min-width: 600px) and (max-width: 1023.98px) {
+            .page {
+                grid-template-columns: repeat(12, minmax(0,1fr));
+                grid-template-areas:
+                "our-game our-game our-game our-game our-game our-game our-game our-game our-game our-game our-game our-game"
+                "data-collected data-collected data-collected data-collected data-collected data-collected data-usage data-usage data-usage data-usage data-usage data-usage"
+                "data-security  data-security  data-security  data-security  data-security  data-security  third-party  third-party  third-party  third-party  user-rights   user-rights"
+                "user-rights user-rights user-rights user-rights policy-updates policy-updates policy-updates";
+            }
+        }
+
+        /* ====== MOBILE (≤600px) ====== */
+        /* Stack semua full-width sesuai urutan konten (paling aman untuk logo/teks panjang) */
+        @media (max-width: 600px) {
+            .page {
+                grid-template-columns: repeat(6, minmax(0,1fr));
+                grid-template-areas:
+                "welcome welcome welcome welcome welcome welcome"
+                "service service service service service service"
+                "eligibility eligibility eligibility eligibility eligibility eligibility"
+                "health health health health health health"
+                "ip ip ip ip ip ip"
+                "privacy privacy privacy privacy privacy privacy"
+                "liability liability liability liability liability liability"
+                "modification modification modification modification modification modification"
+                "prohibited prohibited prohibited prohibited prohibited prohibited" 
+                "contact contact contact contact contact contact";
+                gap: 16px;
+            }
+        }
+        .footer-center {
+          text-align: center;
+        }
+    </style>
+</head>
+<body class="bg-[#F7F2F2] font-sour-gummy text-gray-800">
+
+  
+<!-- NAV -->
+  
+
+  <!-- HEADER -->
+  <header class="bg-[#FA6952] w-full rounded-b-full h-48 flex flex-col items-center justify-center text-white">
+    <h1 class="text-center md:text-6xl font-bold">Privacy Policy</h1>
+  </header>
+
+
+  <!-- LAYOUT -->
+ <div class="mx-auto max-w-7xl p-4 md:p-8 lg:p-12 bg-white rounded-lg mt-8 grid gap-12 md:grid-cols-[220px_1fr]">
+
+    <!-- Sidebar Navigation (DESKTOP ONLY) -->
+    <aside class="lg:sticky lg:top-12 self-start hidden md:block">
+      <nav> <!-- tanya ustadz albar -->
+        <ul class="space-y-6 font-semibold text-brand-brown">
+          <li><a href="#our-game" class="nav-link block hover:bg-orange-100 rounded-md px-3 py-2">Our Game</a></li>
+          <li><a href="#data-collected" class="nav-link block hover:bg-orange-100 rounded-md px-3 py-2">Information We Collect</a></li>
+          <li><a href="#data-usage" class="nav-link block hover:bg-orange-100 rounded-md px-3 py-2">How We Use Your Information</a></li>
+          <li><a href="#data-security" class="nav-link block hover:bg-orange-100 rounded-md px-3 py-2">Data Security</a></li>
+          <li><a href="#third-party" class="nav-link block hover:bg-orange-100 rounded-md px-3 py-2">Third-Party Services</a></li>
+          <li><a href="#user-rights" class="nav-link block hover:bg-orange-100 rounded-md px-3 py-2">User Rights & Contact</a></li>
+          <li><a href="#policy-updates" class="nav-link block hover:bg-orange-100 rounded-md px-3 py-2">Policy Updates</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+
+  <!-- MAIN -->
+  <main>
+    <!-- DROPDOWN (MOBILE ONLY) -->
+    <div class="md:hidden mb-5">
+        <label for="jump" class="sr-only">Our Privacy Policy</label>
+        <select id="jump"
+          class="w-full rounded-xl border border-red-300 bg-white px-4 py-3 text-[16px] shadow-sm
+                 focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-red-500">
+          <option value="#our-game">Our Game</option>
+          <option value="#data-collected">Information We Collect Online</option>
+          <option value="#data-usage">How We Use Your Information</option>
+          <option value="#data-security">Data Security</option>
+          <option value="#third-party">Third-Party Services</option>
+          <option value="#user-rights">User Rights & Contact</option>
+          <option value="#policy-updates">Policy Updates</option>
+        </select>
+      </div>
+
+      <!-- SECTION KONTEN (PAKAI ID UNIK, TANPA DUPLIKAT) -->
+    <div class="p-6 rounded-lg space-y-12">
+      <div class="bg-red-50 shadow-md rounded-2xl overflow-hidden space-y-24">
+        <section id="our-game" class="rounded-2xl overflow-hidden scroll-mt-24">
+          <div>
+            <h2 class="bg-red-100 body text-5xl md:text-5xl px-6 py-4 font-bold text-brand-brown mb-4"> Our Game</h2>
+            <p class="text-base md:text-lg p-6 leading-relaxed"><b>Munchy Garden </b>is an offline educational game designed to encourage children about healthy eating habits in a fun and interactive way. The game operates entirely within the Android operating system and does not require any user login or account creation.</p>
+            <p class="text-base md:text-lg p-6 -mt-6"> Developed by <b>Vegerush</b>, Highschool Students of Thursina International Islamic Boarding School.</p>
+          </div>
+        </section>
+      </div>
+
+
+
+      <!-- Main Content -->
+
+
+      <section id="data-collected" class=" bg-orange-50 rounded-2xl overflow-hidden shadow-md scroll-mt-24">
+          <h2 class="body text-5xl bg-orange-100 md:text-5xl px-6 py-4 font-bold text-brand-brown mb-4">Information We Collect</h2>
+          <p class="p-6">
+            All data is stored internally within the Android operating system. The application runs entirely within the operating system of the Android smartphone device which is managed internally. Therefore, <b>we do not collect any personal user data</b>, and no user data is stored in any external database or cloud server.
+          </p>
+        </section>
+      
+
+      <section id="data-usage" class="bg-yellow-50 rounded-2xl overflow-hidden shadow-md scroll-mt-24">
+        <h2 class="body text-5xl font-bold bg-yellow-100 px-6 py-4 text-primary mb-2">How We Use Your Information</h2>
+        <p class="p-6">
+          As there is no personal data collection, <b>we do not use or process</b> any personal information. Any data generated during gameplay (such as scores or progress) <b>is stored locally</b> on the device and is used solely to enhance the user experience within the app.
+        </p>
+      </section>
+
+      <section id="data-security" class="bg-green-50 rounded-2xl overflow-hidden shadow-md scroll-mt-24">
+        <h2 class="body bg-green-100 text-5xl px-6 py-4 font-bold text-primary mb-2">Data Security</h2>
+        <p class="p-6">
+           As the game operates entirely offline, no personal or gameplay data is transmitted over the internet. Users have full control over their data — uninstalling the game will remove all locally stored progress permanently.
+        </p>
+      </section>
+
+      <section id="third-party" class="bg-blue-50 rounded-2xl overflow-hidden shadow-md scroll-mt-24">
+        <h2 class="text-5xl bg-blue-100 font-bold px-6 py-4 text-primary body mb-2">Third-Party Services</h2>
+        <p class="p-6"> Munchy Garden may include third-party SDKs such as <strong>Unity Engine</strong> or <strong>Google Play Services</strong> to ensure stable gameplay performance and compatibility. These services may automatically collect limited <strong>non-personal technical data</strong>, such as: </p>
+          <div class="bg-blue-100 p-4 rounded-lg mx-10 mb-6">
+            <p class="p-2 list-disc text-2xl body pl-6 flex items-start gap-4"><span class="tengah w-8 h-8 aspect-square inline-flex leading-none item-center justify-center flex-shrink-0 center rounded-full bg-blue-200 mt-1 place-items-center font-bold">1</span><b> User device model and operating system version</b>
+               <p class="ml-16"> Google Play may automatically collect non-personal technical information, such as the user’s device model and Android version. <br><br>The developer does not have access to this information, as it is used solely to ensure app performance and compatibility. These informations are managed entirely by Google Play.</p>
+            </p><br>
+          </div>
+          <div class="bg-blue-100 p-4 rounded-lg mx-10 mb-6">
+            <p class="p-3 list-disc text-2xl body pl-6 flex items-start gap-4"><span class="tengah w-8 h-8 aspect-square inline-flex leading-none item-center justify-center flex-shrink-0 center rounded-full bg-blue-200 mt-1 place-items-center font-bold">2</span><b> Application performance and crash logs</b>
+                <p class="ml-16"> Google Play may store technical data in the form of crash logs that occur during app usage.<br> This data is used internally by Google to help improve app performance and quality across Android devices.</p>
+            </p><br>
+          </div>
+          <div class="bg-blue-100 p-4 rounded-lg mx-10 mb-6">
+            <p class="p-3 list-disc text-2xl body pl-6 flex items-start gap-4"><span class="tengah w-8 h-8 aspect-square inline-flex leading-none item-center justify-center flex-shrink-0 center rounded-full bg-blue-200 mt-1 place-items-center font-bold">3</span><b> Basic analytics data for performance improvement</b>
+                <p class="ml-16"> Performance analytics data is also managed by Google Play to analyze how improvements have been implemented in order to enhance app quality and stability across Android devices.</p>
+            </p>
+          </div>
+        <p class="p-6 -mt-4"> This technical data collection is managed solely by the respective service providers and is subject to their individual privacy policies, such as: </p>
+        <ul class="ml-6 list-disc body pl-6">
+            <li><a href="https://unity3d.com/legal/privacy-policy" class="text-blue-500 underline">Unity Privacy Policy</a></li>
+            <li><a href="https://policies.google.com/privacy" class="text-blue-500 underline">Google Privacy Policy</a></li>
+        </ul>
+        <p class="p-6"> Munchy Garden does not control, access, or use any data that these services may collect.</p>
+      </section>
+
+      <section id="user-rights" class="bg-pink-50 shadow-md rounded-2xl overflow-hidden scroll-mt-24">
+        <h2 class="text-5xl body font-bold bg-pink-100 px-6 py-4 text-primary mb-2">Your Rights & Contact</h2>
+        <p class="p-6">
+          As the user of Munchy Garden, you have the following rights regarding your personal data:<br><br>
+        </p>
+        <div class="paragraphs p-6 -mt-12 -ml-6">
+            <p class="p-3 list-disc text-2xl body pl-6"><b><span class="tengah w-8 h-8 aspect-square  inline-flex leading-none item-center justify-center flex-shrink-0 center rounded-full bg-red-200 mt-1 place-items-center">1</span> Data Collected</b>
+              <p class="ml-16"> Know that Munchy Garden <b>does not collect</b> any personal data.</p>
+            </p><br>
+            <p class="p-3 list-disc text-2xl body pl-6"><b><span class="tengah w-8 h-8 aspect-square  inline-flex leading-none item-center justify-center flex-shrink-0 center rounded-full bg-red-200 mt-1 place-items-center">2</span> Data Deletion</b>
+              <p class="ml-16"> Uninstall game to permanently remove all locally stored data.</p>
+            </p><br>
+            <p class="p-3 list-disc text-2xl body pl-6"><b><span class="tengah w-8 h-8 aspect-square  inline-flex leading-none item-center justify-center flex-shrink-0 center rounded-full bg-red-200 mt-1 place-items-center">3</span> Privacy Support</b>
+              <p class="ml-16"> Users may contact the developer regarding this policy or any privacy-related concerns at:</p><br>
+              <p class="ml-12 p-4 -mt-6">📩 Gmail:<a href="mailto:Vegerush25@gmail.com" class="text-blue-500 underline"> Vegerush25@gmail.com</a></p>
+            <p class="ml-12 p-4 -mt-6">📷 Instagram:<a href="https://www.instagram.com/Vegerush" class="text-blue-500 underline"> @Vegerush</a></p>
+            </p>
+         
+        </div>
+
+       
+      </section>
+
+      <section id="policy-updates" class="bg-purple-50 rounded-2xl overflow-hidden shadow-md scroll-mt-24">
+        <h2 class="text-5xl body font-bold bg-purple-100 px-6 py-4 text-primary mb-2">Updates to This Policy</h2>
+        <p class="p-6">
+          Updates to This Policy This Privacy Policy may be updated periodically to reflect improvements or regulatory changes. Updates will be available along with the latest version of the application on Google Play.
+        </p>
+      </section>
+
+      
+    </div>
+  </main>
+  </div>
+
+    
+  
+
+
+
+<!-- Footer -->   
+<footer class="bg-[#FA6952] text-white item-center mt-12 rounded-2xl ml-72 mr-72 mb-6 p-8">
+  <div class="container items-center text-center">
+    <div class="block text-center sm:flex-row items-center justify-center gap-4 -mt-2">
+       <h1 class="text-3xl font-bold footer-center">Privacy Concerns and Questions?</h1>
+       <p class="text-lg mt-2">If you have any questions or concerns about this privacy policy, please feel free to contact our team</p>
+       <p class="text-1xl mt-6"> Last Updated: October 2025</p>
+    </div>
+  </div>
+</footer>
+
+
+
+<!-- JS: dropdown (mobile) -->
+  <script>
+    const sel = document.getElementById('jump');
+    if (sel) {
+      sel.addEventListener('change', e => {
+        const t = document.querySelector(e.target.value);
+        if (t) t.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      });
+    }
+  </script>
+
+  <script>
+  const ACTIVE = ['bg-[#FA6952]','text-white','font-semibold']; // oren tua + teks putih
+  const links = [...document.querySelectorAll('.nav-link')];
+
+  function setActiveByHref(href) {
+    links.forEach(a => a.classList.remove(...ACTIVE, 'aria-[current=true]:bg-orange-600'));
+    const target = links.find(a => a.getAttribute('href') === href);
+    if (target) {
+      target.classList.add(...ACTIVE);
+      target.setAttribute('aria-current', 'true'); // aksesibel
+    }
+  }
+
+  // klik: set aktif & tetap
+  links.forEach(a => {
+    a.addEventListener('click', () => setActiveByHref(a.getAttribute('href')));
+  });
+
+  // saat halaman pertama kali dibuka / reload, pakai hash jika ada
+  if (location.hash) {
+    setActiveByHref(location.hash);
+  } else if (links[0]) {
+    setActiveByHref(links[0].getAttribute('href')); // optional: aktifkan item pertama
+  }
+
+  // kalau hash berubah (misal user pakai back/forward)
+  window.addEventListener('hashchange', () => setActiveByHref(location.hash));
+</script>
+
+</body>
+</html>
